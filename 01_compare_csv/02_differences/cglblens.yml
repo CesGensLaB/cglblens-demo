@@ -1,0 +1,7 @@
+processor: Compare
+tags: [csv]
+report:
+  output:
+    export_html: true
+
+  
