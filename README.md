@@ -6,10 +6,15 @@ A [CesGensLaB](https://cesgenslab.fr) framework for **data collecting** and **da
 
 ## What is this repository ?
 
-A collection of demonstrations to learn how to use CglbLens.
+A **collection** of **demonstrations** to **learn** how to use CglbLens.
 
-## Install GglbLens
+## How to install GglbLens
 
-Installation of `cglblens` is a prerequisite for those demonstrations.
+**Installation** of `cglblens` is a **prerequisite** for those demonstrations.
 
-Please see the official documentation [here](https://docs.cesgenslab.cloud/cglblens/)
+Please see the **official documentatio**n [here](https://docs.cesgenslab.cloud/cglblens/)
+
+## How to use this reposotory
+
+**Navigate** to the first level **sub folders** and **read** the **README.md** files for instructions.
+
