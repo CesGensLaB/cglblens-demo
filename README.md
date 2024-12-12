@@ -4,6 +4,17 @@
 
 A [CesGensLaB](https://cesgenslab.fr) framework for **data collecting** and **data deep analysis**.
 
+Resources:
+
+- [Registry](https://forge-02.cesgenslab.cloud/cglb-registry/-/packages/pypi/cglblens)
+  
+- [Documentation](https://docs.cesgenslab.cloud/cglblens/)
+  
+- [Demos](https://github.com/CesGensLaB/gcglblens-demo)
+  
+- [Issue Tracker](https://forge-02.cesgenslab.cloud/cglb-registry/cglblens-issues/issues)
+
+
 ## What is this repository ?
 
 A **collection** of **demonstrations** to **learn** how to use CglbLens.
