@@ -1,5 +1,5 @@
 processor: Compare
-tags: [csv]
+tags: [csv, differences]
 report:
   output:
     export_html: true

@@ -10,7 +10,7 @@ A [CesGensLaB](https://cesgenslab.fr) framework for **data collecting** and **da
 
 - [Registry](https://forge-02.cesgenslab.cloud/cglb-registry/-/packages/pypi/cglblens)  
   
-- [Demos](https://github.com/CesGensLaB/gcglblens-demo)
+- [Demos](https://github.com/CesGensLaB/cglblens-demo)
   
 - [Issue Tracker](https://forge-02.cesgenslab.cloud/cglb-registry/cglblens-issues/issues)
 
