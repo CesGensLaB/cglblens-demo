@@ -1,4 +1,4 @@
-# GglbLens Demos
+# CglbLens Demos
 
 ## What is CglbLens ?
 
@@ -19,7 +19,7 @@ A [CesGensLaB](https://cesgenslab.fr) framework for **data collecting** and **da
 
 A **collection** of **demonstrations** to **learn** how to use CglbLens.
 
-## How to install GglbLens
+## How to install CglbLens
 
 **Installation** of `cglblens` is a **prerequisite** for those demonstrations.
 
