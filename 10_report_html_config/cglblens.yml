@@ -2,7 +2,6 @@ processor: Compare
 tags: [csv, differences]
 report:
   title: "This is my awesome title"
-  # logo: "report_1.svg"
   logo_file: "report_1.svg"
   output:
     export_html: true

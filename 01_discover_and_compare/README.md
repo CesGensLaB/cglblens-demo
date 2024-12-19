@@ -1,4 +1,4 @@
-# 01 Compare csv
+# Run --discover with --tag
 
 ## Instructions
 
