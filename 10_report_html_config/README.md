@@ -2,7 +2,7 @@
 
 ## Instructions
 
-1. Go to 01_compare_csv `cd 10_report_config`
+1. Go to 01_compare_csv `cd 10_report_html_config`
 2. Test A - Run `cglblens run .`
 
 ## Explainations
