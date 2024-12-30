@@ -1,0 +1,10 @@
+processor: ExecuteAndCompare
+execute_and_compare:
+  test:
+    command_path: "mock_test_txt.sh"
+  reference:
+    command_path: "mock_reference_txt.sh"
+report:
+  output:
+    export_html: true
+    
