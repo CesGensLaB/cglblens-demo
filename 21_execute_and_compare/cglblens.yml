@@ -1,0 +1,15 @@
+processor: ExecuteAndCompare
+execute:
+  command_guess_os_extension: true
+execute_and_compare:
+  test:
+    command_path: "mock_test_txt"
+  reference:
+    command_path: "mock_reference_txt"
+compare:
+  sources:
+    additional_path_suffix: "outputs/"
+report:
+  output:
+    export_html: true
+    
