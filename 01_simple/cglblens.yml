@@ -1,0 +1,8 @@
+processor: Compare
+tags: [csv, simple]
+report:
+  output:
+    export_html: true
+  html:
+    curves:
+      display_on_load: true
