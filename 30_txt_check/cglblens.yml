@@ -1,11 +1,11 @@
 processor: Compare
-tags: [csv, no_difference]
+tags: [csv, check]
+readers:
+  txt:
+    error_rule_patterns: ["NaN"]
 report:
   output:
-    export_json: true
     export_html: true
   html:
-    collapse_if_successful: false
     curves:
       display_on_load: true
-  

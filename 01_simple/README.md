@@ -10,4 +10,8 @@
 
 ## Explainations
 
-cglblens will compare the 2 files `co2_emissions.csv`, found 3 comparison errors  and generate an html report
+cglblens will compare :
+
+- the 2 files `co2_emissions.csv`, and find 3 comparison errors
+- the 2 files `data.txt`, and find 1 comparison errors
+- generate an html report

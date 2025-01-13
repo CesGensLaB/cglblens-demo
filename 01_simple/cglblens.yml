@@ -1,5 +1,8 @@
 processor: Compare
-tags: [csv, simple]
+tags: [csv, txt, simple]
+readers:
+  csv:
+    curve_parser: col_x
 report:
   output:
     export_html: true

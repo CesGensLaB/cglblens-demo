@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>Highlight Differences Between Two Curves</title>
+</head>
+<body>
+  <div id="plot"></div>
+  <script>
+    // Data for the two curves
+    const x      = [ 0 , 1  , 2  , 3  , 4 , 5 , 6 , 7 , 8 , 9 ];
+    const curve1 = [ 1 , 2  , 3  , 4  , 5 , 6 , 7 , 8 , 9 , 10];
+    const curve2 = [ 1 , 1.5, 2.5, 3.5, 4 , 6.5, 7.5, 9, 12, 14];
+
+    // Upper region (where curve1 > curve2)
+    const upperDiff = curve1.map((y1, i) => (y1 > curve2[i] ? y1 : curve2[i]));
+
+    // Lower region (where curve2 > curve1)
+    const lowerDiff = curve1.map((y1, i) => (y1 > curve2[i] ? curve2[i] : y1));
+
+    // Trace for curve1
+    const trace1 = {
+      x: x,
+      y: curve1,
+      mode: 'lines',
+      name: 'Curve 1',
+      line: { color: 'blue' },
+    };
+
+    // Trace for curve2
+    const trace2 = {
+      x: x,
+      y: curve2,
+      mode: 'lines',
+      name: 'Curve 2',
+      line: { color: 'red' },
+    };
+
+    // Highlight upper difference
+    const upperHighlight = {
+      x: [...x, ...x.slice().reverse()],
+      y: [...upperDiff, ...lowerDiff.slice().reverse()],
+      fill: 'toself',
+      fillcolor: 'rgba(0, 100, 255, 0.2)',
+      line: { width: 0 },
+      name: 'Upper Difference',
+      type: 'scatter',
+    };
+
+    // Highlight lower difference
+    const lowerHighlight = {
+      x: [...x, ...x.slice().reverse()],
+      y: [...lowerDiff, ...upperDiff.slice().reverse()],
+      fill: 'toself',
+      fillcolor: 'rgba(255, 0, 0, 0.2)',
+      line: { width: 0 },
+      name: 'Lower Difference',
+      type: 'scatter',
+    };
+
+    // Plot configuration
+    const layout = {
+      title: 'Highlight Differences Between Two Curves',
+      xaxis: { title: 'X-axis' },
+      yaxis: { title: 'Y-axis' },
+    };
+
+    // Combine all traces
+    const data = [trace1, trace2, upperHighlight, lowerHighlight];
+
+    Plotly.newPlot('plot', data, layout);
+  </script>
+</body>
+</html>

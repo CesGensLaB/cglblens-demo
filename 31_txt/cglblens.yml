@@ -1,0 +1,21 @@
+processor: Compare
+tags: [txt]
+readers:
+  txt:
+    report_lines: 
+      _:
+        pre: 2
+        post: 2
+    ignore:
+      _:
+        - pattern: "line to ignore"
+          pre: 0
+          post: 0        
+report:
+  output:
+    export_html: true
+  html:
+    curves:
+      display_on_load: true
+
+
