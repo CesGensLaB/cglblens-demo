@@ -1,0 +1,12 @@
+processor: Compare
+tags: [dat]
+file_reader:
+  extension_mapping: {"dat": "txt"}   
+report:
+  output:
+    export_html: true
+  html:
+    curves:
+      display_on_load: true
+
+
