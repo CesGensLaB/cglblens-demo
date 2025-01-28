@@ -1,4 +1,4 @@
-# Run Compare with --discover and --tag
+# Run Compare with --collect-discover and --tag
 
 ## Instructions
 
@@ -7,7 +7,7 @@
 3. Test B - Run with discover and tags `cglblens run --discover --tag differences .`
 4. Test C - Run with discover and tags `cglblens run --discover --tag differences --tag no_difference .`
 
-## Explainations
+## Explanations
 
 For reminder, the tags defined in `cglblens.yml` i
 
@@ -31,12 +31,12 @@ report:
 
 ### Test A
 
-Running `cglblens run --discover .` will find 2 configuration files `cglblens.yml` in `01_no_difference` and `02_differences` subfolders and execute them.
+Running `cglblens run --collect-discover .` will find 2 configuration files `cglblens.yml` in `01_no_difference` and `02_differences` subfolders and execute them.
 
 ### Test B
 
-Running `cglblens run --discover --tag differences .` will find 2 configuration files `cglblens.yml` in `01_no_difference` and `02_differences` subfolders, but only `02_differences/cglblens.yml` has a tag `differences` defined in it, then execute only this one.
+Running `cglblens run --collect-discover --tag differences .` will find 2 configuration files `cglblens.yml` in `01_no_difference` and `02_differences` subfolders, but only `02_differences/cglblens.yml` has a tag `differences` defined in it, then execute only this one.
 
 ### Test C
 
-Running `cglblens run --discover --tag differences --tag no_difference .` will find 2 configuration files `cglblens.yml` in `01_no_difference` and `02_differences` subfolders, and execute them both, as `02_differences/cglblens.yml` has a tag `differences` and `01_no_difference/cglblens.yml` has a tag `no_difference` 
+Running `cglblens run --collect-discover --tag differences --tag no_difference .` will find 2 configuration files `cglblens.yml` in `01_no_difference` and `02_differences` subfolders, and execute them both, as `02_differences/cglblens.yml` has a tag `differences` and `01_no_difference/cglblens.yml` has a tag `no_difference` 

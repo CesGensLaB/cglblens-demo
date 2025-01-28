@@ -1,16 +1,16 @@
-# Run Compare with --discover and --tag
+# Run Compare with --collect-depth in recursive mode
 
 ## Instructions
 
 1. `cd` to this folder
 2. Run with `--collect-depth`: `cglblens run --collect-depth 2 .`
 
-## Explainations
+## Explanations
 
 Here the folders structure:
 
 ```
-/03_collect_depth_and_compare
+/04_collect_depth_and_compare_rec
     /depth_1
         /01_no_difference
             /reference

@@ -1,11 +1,11 @@
-# Run Compare with --discover and --tag
+# Run Compare with --collect-depth 
 
 ## Instructions
 
 1. `cd` to this folder
 2. Run with `--collect-depth`: `cglblens run --collect-depth 2 .`
 
-## Explainations
+## Explanations
 
 Here the folders structure:
 

@@ -5,6 +5,7 @@ compare:
 readers:
   csv:
     curve_parser: col_x
+    curve_col_x_index: 1
 report:
   output:
     export_html: true

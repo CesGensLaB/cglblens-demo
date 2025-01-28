@@ -1,12 +1,10 @@
 processor: Compare
-tags: [csv, txt, simple]
+tags: [txt]
 readers:
-  csv:
-    ignore_colunmns: ["Label 3"]
-    curve_parser: col_x
+  txt:
+    error_rule_patterns: ["NaN"]
 report:
   output:
-    export_json: true
     export_html: true
   html:
     curves:

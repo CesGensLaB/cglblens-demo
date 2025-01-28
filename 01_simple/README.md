@@ -1,4 +1,4 @@
-# Run Compare with --discover and --tag
+# Run Simple Compare
 
 **Linux Only**
 (the command sh)
@@ -8,7 +8,7 @@
 1. `cd` to this folder
 2. Run `cglblens run .`
 
-## Explainations
+## Explanations
 
 cglblens will compare :
 
