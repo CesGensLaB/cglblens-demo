@@ -1,0 +1,12 @@
+processor: Compare
+tags: [txt]
+file_reader:
+  custom_curve_parser: example_parser.py::get_curves 
+report:
+  output:
+    export_html: true
+  html:
+    curves:
+      display_on_load: true
+
+
