@@ -8,7 +8,7 @@
 1. `cd` to this folder
 2. Run `cglblens run .`
 
-## Explanations
+## Explainations
 
 cglblens will compare :
 

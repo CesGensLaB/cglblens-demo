@@ -1,0 +1,12 @@
+processor: ExecuteAndCompare
+execute:
+  command_guess_os_extension: true
+execute_and_compare:
+  test:
+    command_path: "mock_test_txt"
+  reference:
+    executable_url: "https://raw.githubusercontent.com/CesGensLaB/cglblens-demo/refs/heads/main/assets/exe/mock_reference_txt.{% if sys.os == 'linux' %}sh{% endif %}{% if sys.os == 'windows' %}bat{% endif %}"
+report:
+  output:
+    export_html: true
+    

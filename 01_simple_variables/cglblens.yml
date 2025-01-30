@@ -1,5 +1,11 @@
 processor: Compare
 tags: [csv, txt, simple]
+variables:
+  parameter_1: parameter_1_value
+  parameter_2: "parameter_2_value {{ vars.parameter_1}}"
+  env_home: "{{ env.HOME }}"
+  python_version: "{{ sys.python }}"
+  os_arch: "{{ sys.os }}_{{ sys.arch }}"
 readers:
   csv:
     curve_parser:

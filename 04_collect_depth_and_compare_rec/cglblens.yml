@@ -4,8 +4,10 @@ compare:
     recursive: true
 readers:
   csv:
-    curve_parser: col_x
-    curve_col_x_index: 1
+    curve_parser:
+      name: "col_x"
+      parameters:
+        x: 1
 report:
   output:
     export_html: true
