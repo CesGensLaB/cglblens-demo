@@ -2,6 +2,5 @@ cglblens_report.*
 cglblens_generated_data.*
 *.log
 index.html
-
 __env__
 test_assets
