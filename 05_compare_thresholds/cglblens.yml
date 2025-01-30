@@ -1,0 +1,19 @@
+processor: Compare
+compare:
+  float_thresholds:
+    absolute_error_max: 1.0e-03
+    absolute_error_min: 1.0e-04
+    relative_error_max: 0.01 
+    relative_error_min: 0.001
+    relative_vs_absolute_min: 1.0e-02 
+readers:
+  csv:
+    curve_parser: col_x
+    curve_col_x_index: 1
+report:
+  output:
+    export_html: true
+  html:
+    collapse_if_successful: false
+    curves:
+      display_on_load: true
