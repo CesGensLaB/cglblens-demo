@@ -3,11 +3,12 @@ tags: [csv]
 readers:
   csv:
     ignore_colunmns: ["Label 3"]
-    curve_parser: col_x
-    curve_col_x_index: 1
+    curve_parser:
+      name: "col_x"
+      parameters:
+        x: 1
 report:
   output:
-    export_json: true
     export_html: true
   html:
     curves:

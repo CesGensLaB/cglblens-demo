@@ -1,8 +1,10 @@
 processor: Compare
 readers:
   csv:
-    curve_parser: col_x
-    curve_col_x_names: ["Label 1", "Time"]
+    curve_parser:
+      name: "col_x"
+      parameters:
+        x: ["Label 1", "Time"]
 report:
   output:
     export_html: true
